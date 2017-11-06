@@ -33,6 +33,8 @@
 * generate service worker: `npm run pwa`
 * serving server side rendered: `npm run serve:universal`
 
+![build](./docs/screenshots/build.png "This should be the output after the build process")
+
 ```
 "scripts": {
   "...": "..."
