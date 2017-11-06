@@ -40,10 +40,16 @@
   "serve:universal": "node dist/server.js",
   "build:client-and-server-bundles": "ng build --prod --build-optimizer && ng build --prod --build-optimizer --app 1 --output-hashing=false",
   "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-  "pwa": "sw-precache --root=dist --config=precache-config.js",
-  "pwa:dev": "ng build --prod && sw-precache --root=dist/server --config=precache-config.js"
+  "pwa": "sw-precache --root=dist/browser --config=precache-config.js",
+  "pwa:dev": "ng build --prod && sw-precache --root=dist --config=precache-config.js"
 }
 ```
+
+## Running on http-server
+
+* `npm install http-server`
+* `http-server --https --cors <path-of-index.html>`
+* open `http://127.0.0.1:8080` 
 
 ## Running unit tests
 
@@ -52,10 +58,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Todos
-
-Testing on http-server.
 
 ## Reference
 
