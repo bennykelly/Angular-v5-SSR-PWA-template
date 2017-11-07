@@ -7,15 +7,21 @@ module.exports = {
   root: 'dist/browser/',
   plugins: [
     new SWPrecacheWebpackPlugin({
-      cacheId: 'PWA Starter Kit',
+      cacheId: 'PWA Kit',
       filename: 'service-worker.js',
+      filePath: 'dist/browser/service-worker.js',
       staticFileGlobs: [
         'dist/browser/index.html',
         'dist/browser/**.js',
         'dist/browser/**.css',
+        'dist/browser/assets/images/icons/**.png',
+        'dist/browser/assets/images/icons/**.svg',
+        'dist/browser/assets/images/icons/**.ico'
       ],
       stripPrefix: 'dist/browser/assets/',
-      mergeStaticsConfig: true
+      mergeStaticsConfig: true,
+      verbose: true,
+      navigateFallback: '/index.html',
     })
   ]
 }

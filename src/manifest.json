@@ -1,7 +1,7 @@
 {
-  "short_name": "PWA Starter Kit",
+  "short_name": "PWA Kit",
   "name": "Angular v5 SSR and PWA Starter Kit",
-  "start_url": "/",
+  "start_url": "/browser/",
 
   "theme_color": "#f48c5b",
   "background_color": "#ffffff",
@@ -16,8 +16,8 @@
       "type": "image/png"
     },
     {
-      "src": "/assets/images/icons/android-chrome-72x72.png",
-      "sizes": "72x72",
+      "src": "/assets/images/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
       "type": "image/png"
     },
     {
