@@ -18,21 +18,15 @@ module.exports = {
         'dist/browser/assets/images/icons/**.svg',
         'dist/browser/assets/images/icons/**.ico'
       ],
+      minify: true,
+      mergeStaticsConfig: true,
       stripPrefix: 'dist/browser/assets/',
       stripPrefixMulti: {
         'dist/browser/assets/': 'assets/',
-        'browser/': ''
+        'dist/browser/': ''
       },
-      mergeStaticsConfig: true,
       verbose: true,
-      navigateFallback: '/index.html',
-      runtimeCaching: [{
-        urlPattern: /\/api\//,
-        handler: 'networkFirst'
-      },{
-        urlPattern: /\/intercom\//,
-        handler: 'networkFirst'
-      }]
+      navigateFallback: '/index.html'
     })
   ]
 }
