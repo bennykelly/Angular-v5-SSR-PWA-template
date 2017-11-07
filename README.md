@@ -44,6 +44,7 @@
 ## Error or Bug
 
 If you ever encounter this error
+
 ![req-error](./docs/screenshots/req-error.png "Please refer to the link below")
 
 Here is the issue link: https://github.com/angular/angular-cli/issues/8359
@@ -60,3 +61,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 * https://angular.io/guide/universal
 * https://angularfirebase.com/lessons/installable-angular-progressive-web-app/
+
+## Note
+
+* I haven't try it yet in a hosting site with prod build.
+* I will continue to work on this.
+* Please tell me if you have any idea on to improve this. Thanks!
