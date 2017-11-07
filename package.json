@@ -9,12 +9,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:universal": "npm run build:client-and-server-bundles && npm run webpack:server && npm run pwa",
+    "build:universal": "npm run build:client-and-server-bundles && npm run webpack:server && workbox generate:sw",
     "serve:universal": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod --build-optimizer && ng build --prod --build-optimizer --app 1 --output-hashing=false",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "pwa": "sw-precache --root=dist/browser --config=precache-config.js",
-    "pwa:dev": "ng build --prod && sw-precache --root=dist --config=precache-config.js"
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
   },
   "private": true,
   "dependencies": {
@@ -52,7 +50,6 @@
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
-    "sw-precache-webpack-plugin": "^0.11.4",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.4.2"
