@@ -18,12 +18,6 @@
 }
 ```
 
-## Try it out!
-
-* clone this repository
-* run and build the commands
-* use http-server for the `service-worker.js` to load
-
 ## Production Build and Serve
 
 * normal: `ng build` or `ng build --prod` or `ng build --prod --build-optimizer`
@@ -47,11 +41,12 @@
 }
 ```
 
-## Running on http-server
+## Error or Bug
 
-* `npm install http-server`
-* `http-server --https --cors <path-of-index.html>`
-* open `http://127.0.0.1:8080` 
+If you ever encounter this error
+![req-error](./docs/screenshots/req-error.png "Please refer to the link below")
+
+Here is the issue link: https://github.com/angular/angular-cli/issues/8359
 
 ## Running unit tests
 
