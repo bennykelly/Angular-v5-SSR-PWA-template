@@ -1,14 +1,13 @@
 # Angular v5 SSR and PWA template
 
-This project is generated using Angular CLI 1.5.0
-The Service worker is generated using workbox
+This project is generated using Angular CLI 1.5.0.
 
-## Prerequisites
+The Service worker is generated using workbox.
 
-* node.js ( stable version )
-* @angular/cli@latest ( 1.5.0 )
-* @angular v5
-* workbox ( for service worker )
+## Inclusion
+
+* Service Worker
+* icons from font-awesome
 
 ```
 "dependencies": {
@@ -69,3 +68,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * I haven't try it yet in a hosting site with prod build.
 * I will continue to work on this.
 * Please tell me if you have any idea on to improve this. Thanks!
+
+* Enable text compression in your server for better performance.
